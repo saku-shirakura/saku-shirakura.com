@@ -3,3 +3,7 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
