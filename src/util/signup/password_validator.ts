@@ -69,7 +69,7 @@ export const validatePassword = (password: string) => {
     // 3 - 5 -> 中
     // 6 - 9 -> 高
     // 10以上 -> 最高
-    let validate: pass_validate_response = {
+    const validate: pass_validate_response = {
         valid: true,
         error: "",
         score: 0

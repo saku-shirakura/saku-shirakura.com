@@ -19,7 +19,7 @@ export const isInvalidUsernameLength = (username: string) => {
 }
 
 export const UsernameValidate = (username: string) => {
-    let result: username_validate_response = {error: "", valid: true};
+    const result: username_validate_response = {error: "", valid: true};
     if (isInvalidUsernameCharType(username)) {
         result.valid = false;
         result.error = "invalid_char_type";
