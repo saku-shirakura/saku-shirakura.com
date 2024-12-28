@@ -12,8 +12,11 @@ export const Header = () => {
                         <Navbar.Brand onClick={() => navigate("/")}>Saku Shirakura</Navbar.Brand>
                         <NavDropdown title="Clocks" id={`navbar`}>
                             <NavDropdown.Item onClick={() => {
-                                navigate("/star_orbit_clock/")
+                                navigate("/clock/star_orbit/")
                             }}>星の軌道時計(適当)</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => {
+                                navigate("/clock/color_code/")
+                            }}>色時計</NavDropdown.Item>
                         </NavDropdown>
                         <Nav onClick={() => {
                             navigate("/signup")

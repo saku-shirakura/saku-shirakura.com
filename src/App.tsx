@@ -5,6 +5,7 @@ import {Signup} from "./page/Signup.tsx";
 import {Login} from "./page/Login.tsx";
 import { Header } from "./components/Header.tsx";
 import {Footer} from "./components/Footer.tsx";
+import ColorClock from "./page/ColorClock.tsx";
 
 function App() {
 
@@ -13,10 +14,11 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
-          <Route path="/" element={<MyProfile/>}/>
-          <Route path="/star_orbit_clock" element={<StarOrbitClock/>}/>
+          <Route path="/clock/star_orbit" element={<StarOrbitClock/>}/>
+          <Route path="/clock/color_code" element={<ColorClock/>}/>
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="*" element={<MyProfile/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
