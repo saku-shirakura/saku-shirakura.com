@@ -1,6 +1,6 @@
 import {FULL_NAME, MY_ICON} from "../CONSTANTS_MY_PROFILE";
 import "./MyProfile.css"
-import {FaGithub, FaXTwitter} from "react-icons/fa6";
+import {FaGithub} from "react-icons/fa6";
 import React, {useState} from "react";
 import useInterval from "use-interval";
 
@@ -9,9 +9,6 @@ const SocialIconTags =
         <a href="https://github.com/saku-shirakura"
            className="social_icon_a">
             <FaGithub className="social_icon"/>
-        </a>,
-        <a href="https://twitter.com/saku_shirakura" className="social_icon_a">
-            <FaXTwitter className="social_icon"/>
         </a>,
     ]
 
